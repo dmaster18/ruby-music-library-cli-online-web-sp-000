@@ -67,7 +67,7 @@ class MusicLibraryController
     i = 1
     sorted_songs.map{|song|
       if song.genre.name == "hi-ho"
-        song.genre.name = "hip-hop"
+      song.genre.name = "hip-hop"
       artist = song.artist.name
       puts "#{i}. #{artist}".to_s
       i+=1
