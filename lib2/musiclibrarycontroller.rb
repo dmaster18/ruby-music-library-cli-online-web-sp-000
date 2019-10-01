@@ -87,7 +87,7 @@ class MusicLibraryController
     i = 1
     songs_by_artist.collect{|song| 
       if song.genre.name == "hi-ho"
-        song.genre.name = "hip-hop
+        song.genre.name = "hip-hop"
         puts "#{i}. #{song.name} - #{song.genre}"
   end
   
