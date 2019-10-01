@@ -85,6 +85,6 @@ class MusicLibraryController
     list_songs
     puts "Which song number would you like to play?"
     plays = gets.chomp
-    
+    if 
   end
 end
