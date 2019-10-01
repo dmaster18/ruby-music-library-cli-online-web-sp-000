@@ -88,7 +88,7 @@ class MusicLibraryController
     if plays >= 1 && plays < list_songs.count
       artist = list_songs[plays][0]
       song = list_songs[plays][1]
-      puts "Playing #{
+      puts "Playing #{song} by 
  
     else
       "Invalid song selection."
