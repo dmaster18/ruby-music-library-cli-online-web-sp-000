@@ -97,16 +97,11 @@ class MusicLibraryController
     end
   end
   
-  def list_artist
-    list_songs_by_artist
-  end
   
   def list_songs_by_genre
   end
   
-  def list_genre
-    list_songs_by_genre
-  end
+
   
   def play_song
     puts "Which song number would you like to play?"
