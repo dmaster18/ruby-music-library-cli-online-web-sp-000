@@ -103,7 +103,7 @@ class MusicLibraryController
     user_input = gets.chomp.to_s
     song_by_genre = @songs.find{|song| song.genre.name == user_input}
     if song_by_genre != nil
-      genre = song_by_artist.artist
+      genre = song_by_artist.genre
       songs_by_artist = @songs.select{|song| song.artist == artist}
       ordered_songs_by_artist = songs_by_artist.sort{|song1, song2| song1 <=> song2}
       i = 1
