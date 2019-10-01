@@ -87,7 +87,7 @@ class MusicLibraryController
     if plays >= 1 && plays < list_songs.count
       list_songs[plays]
     else
-      puts "Invalid song selection."
+      "Invalid song selection."
     end
   end
   
