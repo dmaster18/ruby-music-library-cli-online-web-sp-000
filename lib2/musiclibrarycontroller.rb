@@ -85,7 +85,9 @@ class MusicLibraryController
     artist = song_by_artist.artist
     songs_by_artist = @songs.select{|song| song.artist == artist}
     i = 1
-    songs_by_artist.collect{|song| puts "#{i}. #{song.name} - #{song.genre}"
+    songs_by_artist.collect{|song| 
+      if song.genre.name == "hi-ho"
+        song.genre.name = "hip-hopputs "#{i}. #{song.name} - #{song.genre}"
   end
   
   def list_artist
