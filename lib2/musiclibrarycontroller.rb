@@ -89,7 +89,6 @@ class MusicLibraryController
       artist = list_songs[plays][0]
       song = list_songs[plays][1]
       puts "Playing #{song} by #{artist}"
- 
     else
       "Invalid song selection."
     end
