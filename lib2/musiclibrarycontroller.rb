@@ -32,7 +32,7 @@ class MusicLibraryController
       elsif user_input == "list genre"
         list_genre
       elsif user_input == "play song"
-        plays = 
+        plays = gets
         play_song(plays)
       elsif user_input == "exit"
         exit_value = user_input
