@@ -83,7 +83,8 @@ class MusicLibraryController
     user_input = gets.chomp.to_s
     song_by_artist = @songs.find{|song| song.artist.name == user_input}
     artist = song_by_artist.artist
-    songs_by_artist = @songs.select{|song| song.artist == artist} 
+    songs_by_artist = @songs.select{|song| song.artist == artist}
+    
   end
   
   def list_artist
