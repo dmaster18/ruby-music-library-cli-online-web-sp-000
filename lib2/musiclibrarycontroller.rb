@@ -43,6 +43,7 @@ class MusicLibraryController
     sorted_songs = @songs.sort{|song1, song2| song1.name <=> song2.name}
     i = 0
     while i < @songs.length
+      artist_
       i+=1
       song = sorted_songs[i-1]
       if song.genre.name == "hi-ho"
