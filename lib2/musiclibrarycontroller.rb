@@ -90,7 +90,7 @@ class MusicLibraryController
         song.genre.name = "hip-hop"
         puts "#{i}. #{song.name} - #{song.genre.name}"
         i+=1
-    }
+      }
   end
   
   def list_artist
