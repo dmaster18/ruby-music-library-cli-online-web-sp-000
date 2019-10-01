@@ -70,7 +70,7 @@ class MusicLibraryController
         song.genre.name = "hip-hop"
       end
       genre = song.genre.name
-      puts "#{i}. #{artist}".to_s
+      puts "#{i}. #{genre}".to_s
       i+=1
     }
   end
