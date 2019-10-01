@@ -51,7 +51,6 @@ class MusicLibraryController
       end
       artist_song << ["#{song.artist.name}", "#{song.name}"]
       puts "#{i}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
-
     end
     artist_song
   end
