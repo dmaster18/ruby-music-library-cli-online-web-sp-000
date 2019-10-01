@@ -84,6 +84,7 @@ class MusicLibraryController
     song_by_artist = @songs.find{|song| song.artist.name == user_input}
     artist = song_by_artist.artist
     songs_by_artist = @songs.select{|song| song.artist == artist}
+    i = 1
     songs_by_artist.collect{|song| 
   end
   
