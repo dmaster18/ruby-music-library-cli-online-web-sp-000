@@ -88,7 +88,7 @@ class MusicLibraryController
     songs_by_artist.collect{|song| 
       if song.genre.name == "hi-ho"
         song.genre.name = "hip-hop"
-        puts "#{i}. #{song.name} - #{song.genre.name}"
+        puts "#{i}. #{song.name} - #{song.genre.name}"}
   end
   
   def list_artist
