@@ -87,5 +87,6 @@ class MusicLibraryController
     plays = gets.chomp
     if plays >= 1 & < list_songs.count
       list_songs[plays]
+    end
   end
 end
