@@ -49,7 +49,7 @@ class MusicLibraryController
       if song.genre.name == "hi-ho"
         song.genre.name = "hip-hop"
       end
-            artist_song <<["#{song.artist.name}", "#{song.name}"]
+      artist_song << ["#{song.artist.name}", "#{song.name}"]
       puts "#{i}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
 
     end
