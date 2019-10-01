@@ -33,7 +33,6 @@ class MusicLibraryController
         list_genre
       elsif user_input == "play song"
         puts "Which song number would you like to play?"
-        plays = gets.chomp.to_i
         play_song(plays)
       elsif user_input == "exit"
         exit_value = user_input
@@ -92,7 +91,7 @@ class MusicLibraryController
   end
   
   def play_song
-    
+            plays = gets.chomp.to_i
     if plays >= 1 && plays < list_songs.count
       artist = list_songs[plays][0]
       song = list_songs[plays][1]
