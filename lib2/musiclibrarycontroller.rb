@@ -63,6 +63,13 @@ class MusicLibraryController
   end
   
   def list_genres
+        sorted_songs = @songs.sort{|song1, song2| song1.artist.name <=> song2.artist.name}
+    i = 1
+    sorted_songs.map{|song|
+        artist = song.artist.name
+        puts "#{i}. #{artist}".to_s
+        i+=1
+    }
   end
   
   def list_artist
