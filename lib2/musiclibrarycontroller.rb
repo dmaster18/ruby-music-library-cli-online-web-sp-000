@@ -89,7 +89,7 @@ class MusicLibraryController
       if song.genre.name == "hi-ho"
         song.genre.name = "hip-hop"
         puts "#{i}. #{song.name} - #{song.genre.name}"
-        
+        i+=1
     }
   end
   
