@@ -111,7 +111,7 @@ class MusicLibraryController
         if song.genre.name == "hi-ho"
           song.genre.name = "hip-hop"
         end
-        puts "#{i}. #{song.artist} - #{song.genre.name}"
+        puts "#{i}. #{song.artist} - #{song.name}"
         i+=1
       }
     end
