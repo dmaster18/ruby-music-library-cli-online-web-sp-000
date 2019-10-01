@@ -82,7 +82,7 @@ class MusicLibraryController
     puts "Please enter the name of an artist:"
     user_input = gets.chomp.to_s
     song_by_artist = @songs.find{|song| song.artist.name == user_input}
-    if song_by_artist
+    if song_by_artist != nil
     artist = song_by_artist.artist
     songs_by_artist = @songs.select{|song| song.artist == artist}
     i = 1
