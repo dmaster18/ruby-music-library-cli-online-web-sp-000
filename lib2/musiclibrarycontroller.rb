@@ -50,7 +50,7 @@ class MusicLibraryController
         song.genre.name = "hip-hop"
       end
       puts "#{i}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
-      ["#{song.artist.name}", "#{song.name}"]
+      artist_song <<["#{song.artist.name}", "#{song.name}"]
     end
   end
   
