@@ -91,7 +91,8 @@ class MusicLibraryController
   def list_genre
   end
   
-  def play_song(plays)
+  def play_song
+    
     if plays >= 1 && plays < list_songs.count
       artist = list_songs[plays][0]
       song = list_songs[plays][1]
