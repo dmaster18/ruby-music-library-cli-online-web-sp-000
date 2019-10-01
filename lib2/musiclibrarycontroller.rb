@@ -78,6 +78,7 @@ class MusicLibraryController
     }
   end
   
+  def list_song_by_artist
   def list_artist
   end
   
