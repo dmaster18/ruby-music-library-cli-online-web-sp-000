@@ -87,7 +87,7 @@ class MusicLibraryController
       songs_by_artist = @songs.select{|song| song.artist == artist}
       ordered_songs_by_artist = songs_by_artist.sort{|song1, song2| song1 <=> song2}
       i = 1
-      songs_by_artist.collect{|song| 
+      ordered_songs_by_artist.collect{|song| 
         if song.genre.name == "hi-ho"
           song.genre.name = "hip-hop"
         end
