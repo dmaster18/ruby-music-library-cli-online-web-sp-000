@@ -52,6 +52,7 @@ class MusicLibraryController
       puts "#{i}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
       artist_song <<["#{song.artist.name}", "#{song.name}"]
     end
+    artist_song
   end
   
   def list_artists
