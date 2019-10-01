@@ -49,6 +49,7 @@ class MusicLibraryController
         song.genre.name = "hip-hop"
       end
       puts "#{i}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
+      
     end
   end
   
