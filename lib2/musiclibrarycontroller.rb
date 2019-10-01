@@ -36,6 +36,7 @@ class MusicLibraryController
       elsif user_input == "list songs by artist"
         list_songs_by_artist
       elsif user_input == "list songs by genre"
+      list_songs_by_genre
       elsif user_input == "exit"
         exit_value = user_input
       end
