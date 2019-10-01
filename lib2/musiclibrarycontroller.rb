@@ -63,7 +63,7 @@ class MusicLibraryController
   end
   
   def list_genres
-    sorted_songs = @songs.sort{|song1, song2| song1.genre.name <=> song2.artist.name}
+    sorted_songs = @songs.sort{|song1, song2| song1.genre.name <=> song2.genre.name}
     i = 1
     sorted_songs.map{|song|
       if song.genre.name == "hi-ho"
