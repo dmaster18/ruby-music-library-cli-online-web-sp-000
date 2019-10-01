@@ -83,12 +83,13 @@ class MusicLibraryController
     user_input = gets.chomp.to_s
     song_by_artist = @songs.find{|song| song.artist.name == user_input}
     if song_by_artist != nil
-    artist = song_by_artist.artist
-    songs_by_artist = @songs.select{|song| song.artist == artist}
-    i = 1
-    songs_by_artist.collect{|song| 
-      if song.genre.name == "hi-ho"
-        song.genre.name = "hip-hop"
+      artist = song_by_artist.artist
+      songs_by_artist = @songs.select{|song| song.artist == artist}
+      i = 1
+      songs_by_artist.collect{|song| 
+        if song.genre.name == "hi-ho"
+          song.genre.name = "hip-hop"
+        end
         puts "#{i}. #{song.name} - #{song.genre.name}"
         i+=1
       }
