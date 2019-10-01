@@ -104,7 +104,7 @@ class MusicLibraryController
     song_by_genre = @songs.find{|song| song.genre.name == user_input}
     if song_by_genre != nil
       genre = song_by_artist.genre
-      songs_by_genre = @songs.select{|song| song.artist == artist}
+      songs_by_genre = @songs.select{|song| song.genre == artist}
       ordered_songs_by_artist = songs_by_artist.sort{|song1, song2| song1 <=> song2}
       i = 1
       ordered_songs_by_artist.collect{|song| 
