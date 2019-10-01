@@ -32,6 +32,7 @@ class MusicLibraryController
       elsif user_input == "list genre"
         list_genre
       elsif user_input == "play song"
+            puts "Which song number would you like to play?"
         plays = gets.chomp.to_i
         play_song(plays)
       elsif user_input == "exit"
